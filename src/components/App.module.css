@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.mainNav {
+    border-right: 1px dashed #666666;
+    padding: 25px 25px 0px 20px;
+    width: 200px;
+}
+
+.content {
+    padding: 25px 50px;
+}
