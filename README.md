@@ -1,3 +1,12 @@
+This React project is a compilation of various experiments with [ag-grid](https://www.ag-grid.com/). 
+
+Start up the site by running `npm start` and then click the links in the left-nav to see the following working examples, each with a separate proof-of-concept featuring ag-grid:
+* Basic ag-grid with React, demonstrates:
+    * Fetching and loading data from external API
+    * onGridReady callback, use of gridApi
+    * Column mapping using columnDefs property
+    * Multiple row selection using rowSelection="multiple" attribute on grid, checkboxSelection:true in columnDefs
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
