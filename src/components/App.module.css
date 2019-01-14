@@ -6,7 +6,11 @@
 .mainNav {
     border-right: 1px dashed #666666;
     padding: 25px 25px 0px 20px;
-    width: 200px;
+    width: 300px;
+}
+
+.navList li {
+    margin: 15px;
 }
 
 .content {

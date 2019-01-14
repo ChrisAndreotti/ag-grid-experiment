@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Link, Route } from 'react-router-dom';
 import BasicGrid from './BasicGrid';
-import GridCellClickPopup from './GridCellClickPopup';
+import GridCellClickPopover from './GridCellClickPopover';
 import AppStyles from './App.module.css';
 
 class App extends Component {
@@ -11,14 +11,14 @@ class App extends Component {
         <div className={AppStyles.wrapper}>
           <nav className={AppStyles.mainNav}>
             <h3>Examples:</h3>
-            <ul>
+            <ul className={AppStyles.navList}>
               <li><Link to={`/`}>Basic ag-Grid example</Link></li>
-              <li><Link to={`/grid-with-popup`}>Grid with a popup</Link></li>
+              <li><Link to={`/grid-with-popover`}>Grid with a popover</Link></li>
             </ul>
           </nav>
           <main className={AppStyles.content}>
             <Route exact path="/" component={BasicGrid} />
-            <Route path="/grid-with-popup" component={GridCellClickPopup} />
+            <Route path="/grid-with-popover" component={GridCellClickPopover} />
           </main>
         </div>
       </Router>
