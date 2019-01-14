@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
+import { withTheme } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Popover from '@material-ui/core/Popover';
+
+
 
 const styles = theme => ({
   typography: {
@@ -12,7 +15,7 @@ const styles = theme => ({
 
 class SimplePopover extends React.Component {
   render() {
-    const { classes, anchorEl, handleClose, cellValue } = this.props;
+    const { classes, anchorEl, handleClose, cellValue, theme } = this.props;
     const open = Boolean(anchorEl);
 
     return (
@@ -22,6 +25,7 @@ class SimplePopover extends React.Component {
           open={open}
           anchorEl={anchorEl}
           onClose={(e) => handleClose()}
+          transitionDuration={theme.transitions.duration.shortest}
           anchorOrigin={{
             vertical: 'bottom',
             horizontal: 'center',
@@ -40,6 +44,7 @@ class SimplePopover extends React.Component {
 
 SimplePopover.propTypes = {
   classes: PropTypes.object.isRequired,
+  theme: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(SimplePopover);
+export default withTheme()(withStyles(styles)(SimplePopover));
