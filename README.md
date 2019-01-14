@@ -6,6 +6,8 @@ Start up the site by running `npm start` and then click the links in the left-na
     * onGridReady callback, use of gridApi
     * Column mapping using columnDefs property
     * Multiple row selection using rowSelection="multiple" attribute on grid, checkboxSelection:true in columnDefs
+    
+* Triggering a Material-UI popover when clicking inside an ag-grid cell
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
